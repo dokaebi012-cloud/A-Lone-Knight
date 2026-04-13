@@ -5,11 +5,13 @@ public class PlayerController : MonoBehaviour
     private PlayerMovement playerMovement;
     private PlayerAttack playerAttack;
     private PlayerHealth playerHealth;
+    private PlayerUI playerUI;
     void Start()
     {
         playerMovement = GetComponent<PlayerMovement>();    
         playerAttack = GetComponent<PlayerAttack>();
         playerHealth = GetComponent<PlayerHealth>();
+        playerUI = GetComponent<PlayerUI>();
     }
 
     // Update is called once per frame
@@ -17,6 +19,7 @@ public class PlayerController : MonoBehaviour
     {
         playerMovement.HandleMovement();
         playerAttack.PerformAttack();
-        playerHealth.CheckShieldCount();
+        playerUI.CheckStatus();
+
     }
 }

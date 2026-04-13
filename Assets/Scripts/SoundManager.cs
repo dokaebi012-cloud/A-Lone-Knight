@@ -17,15 +17,7 @@ public class SoundManager : MonoBehaviour
     {
         Stage1BGM
     }
-    public enum SFXType
-    {
-        Blocked,
-        Damaged,
-        Jump,
-        PlayerDie,
-        Run,
-        SwordSwing
-    }
+
     private void Awake()
     {
         if (Instance == null)
@@ -203,4 +195,15 @@ public class SoundManager : MonoBehaviour
     {
 
     }
+}
+public enum SFXType
+{
+    Blocked,
+    GetHealthPotion,
+    Jump,
+    MonsterDamaged,
+    PlayerDamaged,
+    PlayerDie,
+    Run,
+    SwordSwing,
 }
