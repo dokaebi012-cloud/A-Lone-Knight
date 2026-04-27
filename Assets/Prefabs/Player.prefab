@@ -181,6 +181,7 @@ GameObject:
   - component: {fileID: 4487140879376120186}
   - component: {fileID: 4360272102648375610}
   - component: {fileID: 4073437639075654832}
+  - component: {fileID: 27329371251751840}
   - component: {fileID: 5261415362275463750}
   - component: {fileID: 5924636401563522417}
   - component: {fileID: 2418087891890345013}
@@ -381,6 +382,22 @@ MonoBehaviour:
   shieldCount: 0
   shieldCountUI: {fileID: 0}
   healthCountUI: {fileID: 0}
+--- !u!114 &27329371251751840
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6695180665357777470}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 98399b13af6401d4daea1f9418beb512, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  healthCountUI: {fileID: 0}
+  shieldCountUI: {fileID: 0}
+  PauseMenu: {fileID: 0}
+  healthBar: {fileID: 0}
 --- !u!50 &5261415362275463750
 Rigidbody2D:
   serializedVersion: 5

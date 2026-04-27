@@ -44,9 +44,9 @@ public class PlayerAnimation : MonoBehaviour
         attackAnimationIndex %= 3;
 
     }
-    public void TriggerDamage()
+    public void Die()
     {
-
+        animator.Play("PlayerDeathAnimation");
     }
     public void TriggerJump()
     {

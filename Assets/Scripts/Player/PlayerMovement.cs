@@ -24,21 +24,26 @@ public class PlayerMovement : MonoBehaviour
 
     public bool lookingRight = true;
 
+    private PlayerHealth playerHealth;
+
     void Start()
     {
         rigidBody = GetComponent<Rigidbody2D>();
         animator = GetComponent<Animator>();
         playerAnimation = GetComponent<PlayerAnimation>();
         playerAudio = GetComponent<PlayerAudio>();
+        playerHealth = GetComponent<PlayerHealth>();
     }
 
     public void HandleMovement()
     {
-        HorizontalMove();
-        HandleRotation(moveInput);
-        PerformJump();
+        if (playerHealth.isAlive)
+        {
+            HorizontalMove();
+            HandleRotation(moveInput);
+            PerformJump();
+        }
         OnGround();
-
     }
     private void HandleRotation(float moveInput)
     {
@@ -46,7 +51,7 @@ public class PlayerMovement : MonoBehaviour
         {
             lookingRight = true;
         }
-        else if(moveInput < 0) 
+        else if (moveInput < 0)
         {
             lookingRight = false;
         }

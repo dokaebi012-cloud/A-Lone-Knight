@@ -26,6 +26,8 @@ public class PlayerAttack : MonoBehaviour
 
     public float playerDamage = 20;
 
+    private PlayerHealth playerHealth;
+
     void Start()
     {
         animator = GetComponent<Animator>();
@@ -34,11 +36,13 @@ public class PlayerAttack : MonoBehaviour
 
         attackHitbox.SetActive(false);
 
+        playerHealth = GetComponent<PlayerHealth>();
+
     }
 
     public void PerformAttack()
     {
-        if (Input.GetKeyDown(KeyCode.Space))
+        if (Input.GetKeyDown(KeyCode.Space) && playerHealth.isAlive)
         {
             if (!playerAnimation.isDoingAction)
             {
