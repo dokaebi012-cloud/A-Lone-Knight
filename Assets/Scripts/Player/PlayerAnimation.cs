@@ -60,5 +60,9 @@ public class PlayerAnimation : MonoBehaviour
     {
         animator.SetBool("IsRunning", isRunning);
     }
+    public void TriggerBlock()
+    {
+        animator.SetTrigger("Block");
+    }
 
 }

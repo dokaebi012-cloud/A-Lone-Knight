@@ -5,6 +5,7 @@ public class CollisionDamage : MonoBehaviour
 {
     public float damage = 20f;
     public float damageInterval = 1f; // 피해 간격 (초)
+    public bool isActive = true;
 
     // 여러 객체에 각기 다른 피해 인터벌을 적용하기 위해 dictionary<충돌체, 마지막 충돌 시점> 사용
     private Dictionary<Collider2D, float> lastDamageTime = new Dictionary<Collider2D, float>();
@@ -12,11 +13,12 @@ public class CollisionDamage : MonoBehaviour
     // 충돌을 지속하는 동안 플레이어에게 데미지를 주는 함수
     private void OnTriggerStay2D(Collider2D collision)
     {
-        if (collision.CompareTag("Player"))
+        if (collision.CompareTag("Player") && isActive)
         {
             PlayerHealth playerHealth = collision.GetComponent<PlayerHealth>();
             if (playerHealth != null)
             {
+                Debug.Log(gameObject.name + " collided with " + collision.name);
                 // 처음 충돌한 경우 딕셔너리에 콜라이더 등록
                 if (!lastDamageTime.ContainsKey(collision))
                 {
@@ -44,4 +46,5 @@ public class CollisionDamage : MonoBehaviour
             lastDamageTime.Remove(collision); // 충돌 종료 시 딕셔너리 정리
         }
     }
+
 }

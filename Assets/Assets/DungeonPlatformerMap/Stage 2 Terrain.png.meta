@@ -1,0 +1,755 @@
+fileFormatVersion: 2
+guid: 53f5e3a0c8b0ffd47ad9dbcca5a1c209
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -2224378330757002968
+    second: Stage 2 Terrain_0
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Stage 2 Terrain_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1
+        width: 1023
+        height: 1023
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 829072581bb6121e0800000000000000
+      internalID: -2224378330757002968
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Stage 2 Terrain_1
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 688
+        width: 210
+        height: 57
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cbaab1a7eef32d14e9d3ece848bfebce
+      internalID: 1976403088
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Stage 2 Terrain_2
+      rect:
+        serializedVersion: 2
+        x: 210
+        y: 699
+        width: 361
+        height: 46
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6d89093c150f7eb4caac97e528ca7c19
+      internalID: 1690943137
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Stage 2 Terrain_3
+      rect:
+        serializedVersion: 2
+        x: 965
+        y: 811
+        width: 28
+        height: 152
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b35ab172bde1d0a48860cd2c470ff6aa
+      internalID: -1918825640
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Stage 2 Terrain_4
+      rect:
+        serializedVersion: 2
+        x: 439
+        y: 613
+        width: 5
+        height: 73
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 64ab0a26ba3e1f74c91790ccef8437c2
+      internalID: -723843161
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Stage 2 Terrain_5
+      rect:
+        serializedVersion: 2
+        x: 434
+        y: 620
+        width: 5
+        height: 73
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 17a94db52c6ec2a47b90ace354ee1fe7
+      internalID: 865098929
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Stage 2 Terrain_6
+      rect:
+        serializedVersion: 2
+        x: 444
+        y: 609
+        width: 5
+        height: 73
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 516f85d41779ddc478f79cc8c2da1dd0
+      internalID: -1388190697
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Stage 2 Terrain_7
+      rect:
+        serializedVersion: 2
+        x: 449
+        y: 605
+        width: 5
+        height: 73
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1eaf4bd9db037eb45afe80b06f393eec
+      internalID: -589491641
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Stage 2 Terrain_8
+      rect:
+        serializedVersion: 2
+        x: 454
+        y: 600
+        width: 5
+        height: 73
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: faef31ab0d0a8d549af9e37597080d9f
+      internalID: 1238861151
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Stage 2 Terrain_9
+      rect:
+        serializedVersion: 2
+        x: 459
+        y: 596
+        width: 5
+        height: 73
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ce1ed24bbf14d5a4d92cde34129d3f21
+      internalID: 1030931119
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Stage 2 Terrain_10
+      rect:
+        serializedVersion: 2
+        x: 464
+        y: 592
+        width: 5
+        height: 73
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a3d97c0f3d4074941bce2905874aad3d
+      internalID: -1789202796
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Stage 2 Terrain_11
+      rect:
+        serializedVersion: 2
+        x: 469
+        y: 588
+        width: 5
+        height: 73
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7f090bfec79cb464ea311257f89be5ee
+      internalID: 479622126
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Stage 2 Terrain_12
+      rect:
+        serializedVersion: 2
+        x: 474
+        y: 584
+        width: 5
+        height: 73
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6af77d4db72166549b72dcbf2bc43551
+      internalID: 268427194
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Stage 2 Terrain_13
+      rect:
+        serializedVersion: 2
+        x: 479
+        y: 581
+        width: 5
+        height: 73
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 90c25e5acc4b81a49b36f93ac442493b
+      internalID: 783866720
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Stage 2 Terrain_14
+      rect:
+        serializedVersion: 2
+        x: 484
+        y: 576
+        width: 5
+        height: 73
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 18473cb8d9f314d408a7ff07e58eab58
+      internalID: -918939954
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Stage 2 Terrain_15
+      rect:
+        serializedVersion: 2
+        x: 489
+        y: 572
+        width: 5
+        height: 73
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 94ea676aa02fd5f4982b3fec7a4ec484
+      internalID: -1397383851
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Stage 2 Terrain_16
+      rect:
+        serializedVersion: 2
+        x: 494
+        y: 567
+        width: 5
+        height: 73
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c0c8c101c58af1b4092c5cd598e6b366
+      internalID: -478755943
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Stage 2 Terrain_17
+      rect:
+        serializedVersion: 2
+        x: 499
+        y: 562
+        width: 5
+        height: 73
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7cc62b4aec71dad4ca97556f15b7acf3
+      internalID: 1144579976
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Stage 2 Terrain_18
+      rect:
+        serializedVersion: 2
+        x: 504
+        y: 557
+        width: 5
+        height: 73
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 47bb7819e1935644d914a3df719eecf2
+      internalID: -1528752396
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Stage 2 Terrain_19
+      rect:
+        serializedVersion: 2
+        x: 509
+        y: 552
+        width: 5
+        height: 73
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ba0eb7ab1fa812641942a8a5ec361687
+      internalID: -1977323611
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Stage 2 Terrain_20
+      rect:
+        serializedVersion: 2
+        x: 514
+        y: 547
+        width: 5
+        height: 73
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f7264d6f364855448b6ceb23eeb0a33e
+      internalID: -1277683418
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Stage 2 Terrain_21
+      rect:
+        serializedVersion: 2
+        x: 519
+        y: 544
+        width: 5
+        height: 73
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 83c67914c84ec1c428b5c2b433b81553
+      internalID: -1601660611
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Stage 2 Terrain_22
+      rect:
+        serializedVersion: 2
+        x: 524
+        y: 541
+        width: 5
+        height: 73
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b2f718a9a5ec16d47993da5e94ba5c43
+      internalID: -125931929
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Stage 2 Terrain_23
+      rect:
+        serializedVersion: 2
+        x: 529
+        y: 536
+        width: 5
+        height: 73
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 22be98fff79b7324eb04c5e12ab1e9a6
+      internalID: 1960039185
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Stage 2 Terrain_24
+      rect:
+        serializedVersion: 2
+        x: 534
+        y: 532
+        width: 5
+        height: 73
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 98b3a6cae0675414e9cd08b80bdc73cf
+      internalID: 342120349
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Stage 2 Terrain_25
+      rect:
+        serializedVersion: 2
+        x: 539
+        y: 529
+        width: 5
+        height: 73
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 09e4db43ba01ec44898e14daa363fc82
+      internalID: 800534209
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Stage 2 Terrain_27
+      rect:
+        serializedVersion: 2
+        x: 544
+        y: 523
+        width: 38
+        height: 68
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3f1f73a648d50754d97afd7085728c14
+      internalID: 1465402234
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Stage 2 Terrain_0: -2224378330757002968
+      Stage 2 Terrain_1: 1976403088
+      Stage 2 Terrain_10: -1789202796
+      Stage 2 Terrain_11: 479622126
+      Stage 2 Terrain_12: 268427194
+      Stage 2 Terrain_13: 783866720
+      Stage 2 Terrain_14: -918939954
+      Stage 2 Terrain_15: -1397383851
+      Stage 2 Terrain_16: -478755943
+      Stage 2 Terrain_17: 1144579976
+      Stage 2 Terrain_18: -1528752396
+      Stage 2 Terrain_19: -1977323611
+      Stage 2 Terrain_2: 1690943137
+      Stage 2 Terrain_20: -1277683418
+      Stage 2 Terrain_21: -1601660611
+      Stage 2 Terrain_22: -125931929
+      Stage 2 Terrain_23: 1960039185
+      Stage 2 Terrain_24: 342120349
+      Stage 2 Terrain_25: 800534209
+      Stage 2 Terrain_26: 1766819668
+      Stage 2 Terrain_27: 1465402234
+      Stage 2 Terrain_3: -1918825640
+      Stage 2 Terrain_4: -723843161
+      Stage 2 Terrain_5: 865098929
+      Stage 2 Terrain_6: -1388190697
+      Stage 2 Terrain_7: -589491641
+      Stage 2 Terrain_8: 1238861151
+      Stage 2 Terrain_9: 1030931119
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

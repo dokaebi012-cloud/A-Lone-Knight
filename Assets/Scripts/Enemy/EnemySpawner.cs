@@ -1,54 +1,41 @@
 using UnityEngine;
+
 public class EnemySpawner : MonoBehaviour
 {
-    public GameObject monsterPrefab;
-    public float spawnRangeX = 10.0f;
-    public float spawnRangeY = 5.0f;
-    public int enemyCount = 5;
-    public Transform[] spawnPoints;
+    [Header("Spawn Settings")]
+    public GameObject enemyPrefab;           // 소환할 적 프리팹
+    public Transform[] spawnPoints;          // 소환 지점들
+    public float spawnInterval = 5f;         // 소환 주기 (초 단위)
+
+    private float timer;
 
     void Start()
     {
-        SpawnEnemies();
+        timer = spawnInterval;
     }
 
-    void SpawnEnemies()
+    void Update()
     {
-        for (int i = 0; i < enemyCount; i++)
+        timer -= Time.deltaTime;
+
+        if (timer <= 0f)
         {
-            if(spawnPoints.Length > 0)
-            {
-                int randomIndex = Random.Range(0, spawnPoints.Length);
-                Vector2 spawnPosition = spawnPoints[randomIndex].position;
-                Instantiate(monsterPrefab, spawnPosition, Quaternion.identity);
-            }
-            else
-            {
-                float randomX = Random.Range(-spawnRangeX, spawnRangeX);
-                float randomY = Random.Range(-spawnRangeY, spawnRangeY);
-                Vector2 randomPosition = new Vector2 (randomX, randomY);
-                Instantiate(monsterPrefab, randomPosition, Quaternion.identity);
-            }
+            SpawnEnemy();
+            timer = spawnInterval;
         }
     }
 
-    private void OnDrawGizmosSelected()
+    void SpawnEnemy()
     {
-        Gizmos.color = Color.green;
-        Gizmos.DrawWireCube(Vector2.zero, new Vector2(spawnRangeX *2 , spawnRangeY *2));    
-        Gizmos.color= Color.blue;
-        if (spawnPoints.Length > 0)
+        if (spawnPoints.Length == 0 || enemyPrefab == null)
         {
-            foreach (Transform spawnPoint in spawnPoints)
-            {
-                Gizmos.DrawWireSphere(spawnPoint.position, 0.5f);
-            }
+            Debug.LogWarning("SpawnPoints or EnemyPrefab is not set.");
+            return;
         }
+
+        int randomIndex = Random.Range(0, spawnPoints.Length);
+        Transform spawnPoint = spawnPoints[randomIndex];
+
+        Instantiate(enemyPrefab, spawnPoint.position, Quaternion.identity);
     }
-
-}
-
-public enum MonsterType
-{
-
 }

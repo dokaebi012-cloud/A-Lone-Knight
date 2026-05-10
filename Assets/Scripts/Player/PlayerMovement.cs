@@ -15,6 +15,7 @@ public class PlayerMovement : MonoBehaviour
     public Transform groundCheck;
     public float groundCheckRadius = 0.2f;
     public LayerMask groundLayer;
+    public LayerMask platformLayer;
 
     private Animator animator;
     private PlayerAnimation playerAnimation;
@@ -42,6 +43,7 @@ public class PlayerMovement : MonoBehaviour
             HorizontalMove();
             HandleRotation(moveInput);
             PerformJump();
+            StepDownPlatform();
         }
         OnGround();
     }
@@ -76,6 +78,7 @@ public class PlayerMovement : MonoBehaviour
             playerAnimation.TriggerJump();
             //playerAudio.PlayBoingJump();
             SoundManager.Instance.PlaySFX(SFXType.Jump);
+            StartCoroutine(DisablePlatformCollision());
         }
     }
 
@@ -90,9 +93,31 @@ public class PlayerMovement : MonoBehaviour
     private void OnGround()
     {
 
-        isGrounded = Physics2D.OverlapCircle(groundCheck.position, groundCheckRadius, groundLayer);
+        isGrounded = Physics2D.OverlapCircle(groundCheck.position, groundCheckRadius, groundLayer)
+            || Physics2D.OverlapCircle(groundCheck.position, groundCheckRadius, platformLayer);
         animator.SetBool("IsGrounded", isGrounded);
 
     }
+
+    private void StepDownPlatform()
+    {
+        if (Input.GetKeyDown(KeyCode.S) && isGrounded)
+        {
+            StartCoroutine(DisablePlatformCollision());
+        }
+    }
+
+    private IEnumerator DisablePlatformCollision()
+    {
+        // 현재 플레이어가 속한 레이어와 Platform 레이어 간의 충돌을 끔
+        Physics2D.IgnoreLayerCollision(gameObject.layer, LayerMask.NameToLayer("Platform"), true);
+        Debug.Log("플랫폼 충돌 비활성화");
+
+        yield return new WaitForSeconds(0.5f); // 0.5초 후 다시 충돌 활성화
+
+        Physics2D.IgnoreLayerCollision(gameObject.layer, LayerMask.NameToLayer("Platform"), false);
+        Debug.Log("플랫폼 충돌 복구");
+    }
+
 
 }

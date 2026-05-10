@@ -803,7 +803,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 1856
-        y: 1216
+        y: 1200
         width: 32
         height: 32
       alignment: 0
@@ -825,7 +825,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 1888
-        y: 1216
+        y: 1200
         width: 32
         height: 32
       alignment: 0
@@ -846,8 +846,8 @@ TextureImporter:
       name: main_lev_build_33
       rect:
         serializedVersion: 2
-        x: 1920
-        y: 1216
+        x: 1936
+        y: 1200
         width: 32
         height: 32
       alignment: 0
@@ -868,8 +868,8 @@ TextureImporter:
       name: main_lev_build_34
       rect:
         serializedVersion: 2
-        x: 1952
-        y: 1216
+        x: 1968
+        y: 1200
         width: 32
         height: 32
       alignment: 0
@@ -890,8 +890,8 @@ TextureImporter:
       name: main_lev_build_35
       rect:
         serializedVersion: 2
-        x: 1984
-        y: 1216
+        x: 2011
+        y: 1193
         width: 32
         height: 32
       alignment: 0
@@ -1784,50 +1784,6 @@ TextureImporter:
       bones: []
       spriteID: 923835c23e4ee1c4590b0c1b80e3c1d9
       internalID: -1555678233
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: main_lev_build_76
-      rect:
-        serializedVersion: 2
-        x: 1888
-        y: 1184
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 2d34ac7ee01df77449050f7431d8fd4c
-      internalID: -671446573
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: main_lev_build_77
-      rect:
-        serializedVersion: 2
-        x: 1920
-        y: 1184
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 56cf3cb079973894cad461cfe68fd107
-      internalID: 195333252
       vertices: []
       indices: 
       edges: []
@@ -3883,7 +3839,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 1856
-        y: 1088
+        y: 1072
         width: 32
         height: 32
       alignment: 0
@@ -3905,7 +3861,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 1888
-        y: 1088
+        y: 1072
         width: 32
         height: 32
       alignment: 0
@@ -3927,7 +3883,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 1920
-        y: 1088
+        y: 1072
         width: 32
         height: 32
       alignment: 0
@@ -3949,7 +3905,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 1952
-        y: 1088
+        y: 1072
         width: 32
         height: 32
       alignment: 0
@@ -3962,28 +3918,6 @@ TextureImporter:
       bones: []
       spriteID: 222d6f49b9c96294db41545a0e199737
       internalID: -1414416976
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: main_lev_build_182
-      rect:
-        serializedVersion: 2
-        x: 1984
-        y: 1088
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 679c64845a8dc8a47912eb61cc600fe6
-      internalID: 1086756132
       vertices: []
       indices: 
       edges: []
@@ -15776,6 +15710,28 @@ TextureImporter:
       bones: []
       spriteID: fd3c9a0416ce0394c81067a3151d56a8
       internalID: 699710879
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: main_lev_build_115
+      rect:
+        serializedVersion: 2
+        x: 1984
+        y: 1072
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bfdcc85f5c68b55429dd0864f988422d
+      internalID: 577170746
       vertices: []
       indices: 
       edges: []

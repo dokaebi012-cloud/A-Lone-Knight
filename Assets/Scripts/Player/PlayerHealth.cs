@@ -19,6 +19,7 @@ public class PlayerHealth : MonoBehaviour
     public bool isAlive = true;
 
     private PlayerUI playerUI;
+    public bool isInvincible = false;
 
     private void Start()
     {
@@ -30,18 +31,25 @@ public class PlayerHealth : MonoBehaviour
 
     public void GetDamage(float damage)
     {
-        health -= damage;
-        if (health <= 0)
+        if (!isInvincible)
         {
-            health = 0;
-            isAlive = false;
-            playerAnimation.Die();
-            // playerAnimation.Die() 애니메이션이 끝난 후 playerUI.SwitchIsPaused()가 실행되어야 한다.
-            StartCoroutine(DieAndPause());
-            return;
+            health -= damage;
+            if (health <= 0)
+            {
+                health = 0;
+                isAlive = false;
+                playerAnimation.Die();
+                // playerAnimation.Die() 애니메이션이 끝난 후 playerUI.SwitchIsPaused()가 실행되어야 한다.
+                StartCoroutine(DieAndPause());
+                return;
+            }
+            PlayHitSound();
+            StartCoroutine(HitEffect());
         }
-        PlayHitSound();
-        StartCoroutine(HitEffect());
+        else
+        {
+            Debug.Log("invincible!");
+        }
     }
     IEnumerator HitEffect()
     {

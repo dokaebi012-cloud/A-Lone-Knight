@@ -18,7 +18,7 @@ public class PlayerController : MonoBehaviour
     void Update()
     {
         playerMovement.HandleMovement();
-        playerAttack.PerformAttack();
+        playerAttack.Combat();
         playerUI.CheckStatus();
 
     }

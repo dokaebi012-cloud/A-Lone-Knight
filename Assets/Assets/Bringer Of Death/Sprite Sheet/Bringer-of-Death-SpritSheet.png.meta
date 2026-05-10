@@ -391,7 +391,7 @@ TextureImporter:
       name: Bringer-of-Death-SpritSheet_3
       rect:
         serializedVersion: 2
-        x: 504
+        x: 505
         y: 652
         width: 41
         height: 56
@@ -682,7 +682,7 @@ TextureImporter:
         width: 139
         height: 87
       alignment: 9
-      pivot: {x: 0.6747205, y: 0.43306613}
+      pivot: {x: 0.70041883, y: 0.28056422}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -704,7 +704,7 @@ TextureImporter:
         width: 130
         height: 87
       alignment: 9
-      pivot: {x: 0.7620793, y: 0.46590847}
+      pivot: {x: 0.7346022, y: 0.2899447}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -725,8 +725,8 @@ TextureImporter:
         y: 465
         width: 61
         height: 75
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 9
+      pivot: {x: 0.5501934, y: 0.3979415}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -747,8 +747,8 @@ TextureImporter:
         y: 465
         width: 65
         height: 89
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 9
+      pivot: {x: 0.42248818, y: 0.3366675}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -770,7 +770,7 @@ TextureImporter:
         width: 133
         height: 80
       alignment: 9
-      pivot: {x: 0.6860591, y: 0.4636662}
+      pivot: {x: 0.70140636, y: 0.30419922}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -791,8 +791,8 @@ TextureImporter:
         y: 466
         width: 49
         height: 75
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 9
+      pivot: {x: 0.5416568, y: 0.3707255}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -813,8 +813,8 @@ TextureImporter:
         y: 466
         width: 62
         height: 75
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 9
+      pivot: {x: 0.47957733, y: 0.3911377}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -836,7 +836,7 @@ TextureImporter:
         width: 132
         height: 87
       alignment: 9
-      pivot: {x: 0.79504114, y: 0.47534496}
+      pivot: {x: 0.76411486, y: 0.30524665}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -858,7 +858,7 @@ TextureImporter:
         width: 115
         height: 86
       alignment: 9
-      pivot: {x: 0.8516415, y: 0.49999964}
+      pivot: {x: 0.84613407, y: 0.35270798}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []

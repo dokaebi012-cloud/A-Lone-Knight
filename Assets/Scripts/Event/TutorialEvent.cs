@@ -1,25 +1,42 @@
+using NUnit.Framework;
 using UnityEngine;
 
 public class TutorialEvent : MonoBehaviour
 {
-    public GameObject tutorialUI;
+    public GameObject[] tutorialUI;
 
     private void Start()
     {
-        tutorialUI.SetActive(false);
+        foreach (GameObject go in tutorialUI)
+        {
+            go.SetActive(false);
+        }
     }
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if(collision.name == "Player")
+        if(collision.name == "Player" && tutorialUI != null)
         {
-            tutorialUI.SetActive(true);
+            foreach (GameObject go in tutorialUI)
+            {
+                go.SetActive(true);
+            }
         }
     }
     private void OnTriggerExit2D(Collider2D other)
     {
-        if(other.name == "Player")
+        if(other.name == "Player" && tutorialUI != null)
         {
-            tutorialUI.SetActive(false);
+            foreach (GameObject go in tutorialUI)
+            {
+                if(go != null)
+                {
+                    if (go.CompareTag("Slime"))
+                    {
+                        return;
+                    }
+                    go.SetActive(false);
+                }
+            }
         }
     }
 }

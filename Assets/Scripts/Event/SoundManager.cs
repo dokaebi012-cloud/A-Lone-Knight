@@ -199,6 +199,7 @@ public class SoundManager : MonoBehaviour
 public enum SFXType
 {
     Blocked,
+    DeathbringerDie,
     GetHealthPotion,
     Jump,
     MonsterDamaged,
