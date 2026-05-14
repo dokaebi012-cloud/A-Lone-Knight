@@ -24,7 +24,7 @@ public class EnemyJump : MonoBehaviour
     {
         isGrounded = (Physics2D.OverlapCircle(groundCheck.position, groundCheckRadius, groundLayer)
             || Physics2D.OverlapCircle(groundCheck.position, groundCheckRadius, platformLayer));
-        Debug.Log("isSlimeGrounded : " + isGrounded);
+        //Debug.Log("isSlimeGrounded : " + isGrounded);
     }
     //트리거 충돌 시 점프
     private void OnTriggerEnter2D(Collider2D other)

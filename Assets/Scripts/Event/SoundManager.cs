@@ -30,7 +30,7 @@ public class SoundManager : MonoBehaviour
     [RuntimeInitializeOnLoadMethod(RuntimeInitializeLoadType.BeforeSceneLoad)]
     public static void InitSoundManager()
     {
-        GameObject obj = new GameObject("SoundMangaer");
+        GameObject obj = new GameObject("SoundManager");
         Instance = obj.AddComponent<SoundManager>();
         DontDestroyOnLoad(obj);
 
@@ -83,15 +83,8 @@ public class SoundManager : MonoBehaviour
     //Scene전환 완료 시 자동 호출되는 함수
     public void OnSceneLoadCompleted(Scene scene, LoadSceneMode mode)
     {
-        //Scene 전환 시 bgm 전환
-        if (scene.name == "Stage1")
-        {
-            PlayBGM(BGMType.Stage1BGM, 1f);
-        }
-        else if (scene.name == "Boss")
-        {
-            PlayBGM(BGMType.Stage1BGM, 1f);
-        }
+
+        PlayBGM(BGMType.Stage1BGM, 1f);
     }
 
     //효과음 재생
@@ -160,7 +153,7 @@ public class SoundManager : MonoBehaviour
     private IEnumerator FadeInBGM(float duration  = 1.0f)
     {
         //BGM 볼륨 조절시 아래 targetVolume을 바꿀 것
-        float targetVolume = PlayerPrefs.GetFloat("BGMVolume", 0.2f);
+        float targetVolume = PlayerPrefs.GetFloat("BGMVolume", 1.0f);
         float time = 0;
 
         while(time < duration)

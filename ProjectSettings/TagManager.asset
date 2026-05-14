@@ -12,6 +12,7 @@ TagManager:
   - JumpPoint
   - DeathbringerAttack
   - PlayerParry
+  - Deathbringer
   layers:
   - Default
   - TransparentFX
@@ -28,7 +29,7 @@ TagManager:
   - Deathbringer
   - Platform
   - DeathbringerAttack
-  - 
+  - Item
   - 
   - 
   - 

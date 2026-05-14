@@ -2,16 +2,18 @@ using System;
 using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class PlayerUI : MonoBehaviour
 {
+    public PlayerUI playerUI;
     private PlayerHealth playerHealth;
 
     public TextMeshProUGUI healthCountUI;
     public TextMeshProUGUI shieldCountUI;
 
     public GameObject PauseMenu;
-    private bool isPaused = false;
+    public bool isPaused = false;
     public TextMeshProUGUI pauseText;
     public GameObject resumeButton;
 
@@ -21,17 +23,20 @@ public class PlayerUI : MonoBehaviour
     public Button restartButton;
     public Button exitToMenuButton;
 
+    public string restartSceneName;
+
     private void Start()
     {
         playerHealth = GetComponent<PlayerHealth>();
         healthBar.maxValue = playerHealth.health;
         healthBar.value = playerHealth.health;
         healthBar.minValue = 0;
-
-        // SceneTransitionManager는 씬 시작 시 새로 생성되며 DontDestroyOnLoad 설정으로 유지되므로,
+        isPaused = false;
+        // 현재 씬 이름 자동 저장
+        restartSceneName = SceneManager.GetActiveScene().name;
         // 버튼이 참조하던 씬 내 오브젝트는 런타임 중 교체되며 참조 상실
         // 따라서 Start() 단계에서 살아있는 SceneTransitionManager를 코드로 참조해 연결해야 한다
-        restartButton.onClick.AddListener(() => SceneTransitionManager.instance.StartSceneTransition("Stage1"));
+        restartButton.onClick.AddListener(() => SceneTransitionManager.instance.StartSceneTransition(restartSceneName));
         exitToMenuButton.onClick.AddListener(() => SceneTransitionManager.instance.StartSceneTransition("Menu"));
     }
     public void CheckStatus()
@@ -64,6 +69,15 @@ public class PlayerUI : MonoBehaviour
     {
         isPaused = !isPaused;
     }
+
+    // 강제로 unpause할 수 있도록 메서드 추가
+    public void ForceUnpause()
+    {
+        isPaused = false;
+        Time.timeScale = 1f;
+        PauseMenu.SetActive(false);
+    }
+
 
     private void CheckHealth()
     {

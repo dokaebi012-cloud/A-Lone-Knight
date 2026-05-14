@@ -14,7 +14,7 @@ public class TutorialEvent : MonoBehaviour
     }
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if(collision.name == "Player" && tutorialUI != null)
+        if(collision.tag == "Player" && tutorialUI != null)
         {
             foreach (GameObject go in tutorialUI)
             {
@@ -24,7 +24,7 @@ public class TutorialEvent : MonoBehaviour
     }
     private void OnTriggerExit2D(Collider2D other)
     {
-        if(other.name == "Player" && tutorialUI != null)
+        if(other.tag == "Player" && tutorialUI != null)
         {
             foreach (GameObject go in tutorialUI)
             {

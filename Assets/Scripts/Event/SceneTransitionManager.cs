@@ -1,5 +1,6 @@
 using System.Collections;
 using UnityEngine;
+using UnityEngine.EventSystems;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
@@ -11,23 +12,33 @@ public class SceneTransitionManager : MonoBehaviour
     public float fadeDuration = 1.0f;
     public string nextSceneName;
     private bool isFading = false;
+    private PlayerUI playerUI;
 
     private void Awake()
     {
         if (instance == null)
         {
             instance = this;
-            DontDestroyOnLoad(gameObject);
+            //DontDestroyOnLoad(gameObject);
         }
         else
         {
             Destroy(gameObject);
         }
     }
-
+    public void Start()
+    {
+        playerUI = FindAnyObjectByType<PlayerUI>();
+        if (playerUI != null)
+        {
+            Debug.Log("PlayerUI Get");
+        }
+    }
     public void StartSceneTransition(string sceneName)
     {
         Debug.Log("Scene Transition Called: " + sceneName);
+
+        // 페이드 인/아웃 중이 아닐 때 페이드 인/아웃
         if (!isFading)
         {
             nextSceneName = sceneName;
@@ -53,6 +64,13 @@ public class SceneTransitionManager : MonoBehaviour
 
         while (elapsedTime < fadeDuration)
         {
+
+            // 강제 Pause 해제
+            if (playerUI != null)
+            {
+                playerUI.ForceUnpause();
+            }
+
             elapsedTime += Time.deltaTime;
             float newAlpha = Mathf.Lerp(startAlpha, endAlpha, elapsedTime / fadeDuration);
             panelColor.a = newAlpha;

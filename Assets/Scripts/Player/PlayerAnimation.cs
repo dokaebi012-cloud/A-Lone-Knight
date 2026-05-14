@@ -30,14 +30,19 @@ public class PlayerAnimation : MonoBehaviour
         if (attackAnimationIndex%3==1)
         {
             animator.SetTrigger("Attack1");
+            Debug.Log("Attack1");
         }
         else if (attackAnimationIndex%3==2)
         {
             animator.SetTrigger("Attack2");
+            Debug.Log("Attack2");
+
         }
         else 
         {
             animator.SetTrigger("Attack3");
+            Debug.Log("Attack3");
+
         }
 
         attackAnimationIndex++;

@@ -70,10 +70,12 @@ public class EnemyMovement : MonoBehaviour
             {
                 currentPatrolIndex = ++currentPatrolIndex % patrolPoints.Length;
             }
+            animator.SetBool("isRunning", true);
 
         }
         else
         {
+            animator.SetBool("isRunning", false);
             return;
         }
     }
@@ -83,6 +85,7 @@ public class EnemyMovement : MonoBehaviour
         targetPoint = player.transform;
         Vector2 direction = (targetPoint.position - transform.position).normalized;
         rb.linearVelocity = new Vector2(direction.x * chaseSpeed, rb.linearVelocity.y);
+        animator.SetBool("isRunning", true);
 
         // 추적 이동
         Vector2 moveDirection = (targetPoint.position - transform.position).normalized;
@@ -92,19 +95,20 @@ public class EnemyMovement : MonoBehaviour
 
         if (animator != null)
         {
+            animator.SetBool("isRunning", true);
         }
     }
 
     void JumpTowardTarget()
     {
         // 표적이 위/아래에 있을 경우 아래점프/점프
-        if (Mathf.Abs(targetPoint.transform.position.x - transform.position.x) < 1)
+        if (Mathf.Abs(targetPoint.transform.position.x - transform.position.x) < 2)
         {
-            if (((targetPoint.transform.position.y - transform.position.y) < -1) && enemyJump.isGrounded)
+            if (((targetPoint.transform.position.y - transform.position.y) < -2) && enemyJump.isGrounded)
             {
                 enemyJump.IgnorePlatformCollisionTemporary(0.5f);
             }
-            else if (((targetPoint.transform.position.y - transform.position.y) > 1) && enemyJump.isGrounded)
+            else if (((targetPoint.transform.position.y - transform.position.y) > 2) && enemyJump.isGrounded)
             {
                 enemyJump.Jump();
             }

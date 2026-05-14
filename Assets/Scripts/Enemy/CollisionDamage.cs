@@ -13,12 +13,12 @@ public class CollisionDamage : MonoBehaviour
     // 충돌을 지속하는 동안 플레이어에게 데미지를 주는 함수
     private void OnTriggerStay2D(Collider2D collision)
     {
+        //Debug.Log(gameObject.name + " collided with " + collision.name);
         if (collision.CompareTag("Player") && isActive)
         {
             PlayerHealth playerHealth = collision.GetComponent<PlayerHealth>();
             if (playerHealth != null)
             {
-                Debug.Log(gameObject.name + " collided with " + collision.name);
                 // 처음 충돌한 경우 딕셔너리에 콜라이더 등록
                 if (!lastDamageTime.ContainsKey(collision))
                 {

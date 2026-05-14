@@ -161,7 +161,7 @@ GameObject:
   - component: {fileID: 5997101533749888372}
   m_Layer: 12
   m_Name: Deathbringer
-  m_TagString: Untagged
+  m_TagString: Deathbringer
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -322,8 +322,8 @@ CapsuleCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: 0, y: 0}
-  m_Size: {x: 1.25, y: 1.6875}
+  m_Offset: {x: 0, y: -0.24}
+  m_Size: {x: 1.25, y: 1.18}
   m_Direction: 0
 --- !u!114 &6049191892597134268
 MonoBehaviour:
@@ -355,11 +355,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   patrolPoints: []
-  patrolSpeed: 2
-  chaseSpeed: 2
+  patrolSpeed: 3
+  chaseSpeed: 3
   player: {fileID: 0}
   detectionRange: 10
   animator: {fileID: 704393372392391562}
+  targetPoint: {fileID: 0}
+  hitbox: {fileID: 0}
 --- !u!114 &872510174843896941
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -372,6 +374,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 94aa8f362de3c5b428c58a3b47ba242f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isGrounded: 1
   groundCheck: {fileID: 8388132958979456464}
   groundCheckRadius: 0.2
   groundLayer:
@@ -380,6 +383,8 @@ MonoBehaviour:
   platformLayer:
     serializedVersion: 2
     m_Bits: 8192
+  jumpUpDuration: 0.5
+  selfJumpForce: 10
 --- !u!114 &2526798956848677765
 MonoBehaviour:
   m_ObjectHideFlags: 0

@@ -55,8 +55,10 @@ public class PlayerAttack : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.Space) && playerHealth.isAlive)
         {
+            Debug.Log("Space pressed");
             if (!playerAnimation.isDoingAction)
             {
+                Debug.Log("Attack");
                 playerAnimation.TriggerAttack();
                 //playerAudio.PlaySwordSwing();
                 SoundManager.Instance.PlaySFX(SFXType.SwordSwing);
@@ -67,7 +69,6 @@ public class PlayerAttack : MonoBehaviour
             }
             StartCoroutine(playerAnimation.ActionkCooldownByAimation());
             //StartCoroutine(Shake(shakeDuration, shakeMagnitude));
-            GenerateCameraImpulse();
 
         }
     }
@@ -75,8 +76,10 @@ public class PlayerAttack : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.LeftShift) && playerHealth.isAlive && !playerHealth.isInvincible)
         {
+            Debug.Log("Lshift pressed");
             if (!playerAnimation.isDoingAction && playerHealth.shieldCount > 0)
             {
+                Debug.Log("Parry");
                 playerAnimation.TriggerBlock();
                 StartCoroutine(playerAnimation.ActionkCooldownByAimation());
             }
@@ -86,12 +89,13 @@ public class PlayerAttack : MonoBehaviour
     // 애니메이션에서 호출
     public void GiveDamage()
     {
+        GenerateCameraImpulse();
         // 히트박스 활성화
         attackHitbox.SetActive(true);
-        
+
         // 이펙트 생성(대상, 위치, 회전, 부모)
         GameObject effect = Instantiate(attackEffectPrefab, attackHitbox.transform.position, Quaternion.identity, transform);
-        
+
         // 이펙트 크기 조절
         effect.transform.localScale = new Vector3(0.5f, 0.5f, 0.5f); // 크기 조절 (필요에 따라 조정)
 
@@ -105,7 +109,7 @@ public class PlayerAttack : MonoBehaviour
 
         // 이펙트 재생 시간을 ParticleSystem 기반으로 감지해 종료 시 자동 제거
         ParticleSystem particleSystem = effect.GetComponent<ParticleSystem>();
-        if(particleSystem != null)
+        if (particleSystem != null)
         {
             Destroy(effect, particleSystem.main.duration);
         }
@@ -147,9 +151,9 @@ public class PlayerAttack : MonoBehaviour
 
     private void GenerateCameraImpulse()
     {
-        if(impulseSource != null)
+        if (impulseSource != null)
         {
-            Debug.Log("카메라 임펄스 발생");
+            //Debug.Log("카메라 임펄스 발생");
             impulseSource.GenerateImpulse();
         }
         else
@@ -161,21 +165,21 @@ public class PlayerAttack : MonoBehaviour
     {
         if (!playerHealth.isAlive) return;
 
-        if (blockHitbox.activeSelf && 
-            (other.gameObject.layer == LayerMask.NameToLayer("SlimeAttack") || 
+        if (blockHitbox.activeSelf &&
+            (other.gameObject.layer == LayerMask.NameToLayer("SlimeAttack") ||
             other.gameObject.layer == LayerMask.NameToLayer("DeathbringerAttack")))
         {
-            if(playerHealth.shieldCount > 0) playerHealth.shieldCount--;
+            if (playerHealth.shieldCount > 0) playerHealth.shieldCount--;
             GenerateCameraImpulse();
             // 무적 처리
             StartCoroutine(TemporaryInvincibility(parryInvincibilityDuration));
 
-            // 적 애니메이터에 Blocked 트리거 발동
-            Animator enemyAnimator = other.GetComponentInParent<Animator>();
-            if (enemyAnimator != null)
-            {
-                enemyAnimator.SetTrigger("Blocked");
-            }
+            //// 적 애니메이터에 Blocked 트리거 발동
+            //Animator enemyAnimator = other.GetComponentInParent<Animator>();
+            //if (enemyAnimator != null)
+            //{
+            //    enemyAnimator.SetTrigger("Blocked");
+            //}
 
             // 효과음
             SoundManager.Instance.PlaySFX(SFXType.Blocked);
