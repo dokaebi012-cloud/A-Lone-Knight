@@ -32,10 +32,7 @@ public class PlayerUI : MonoBehaviour
         healthBar.value = playerHealth.health;
         healthBar.minValue = 0;
         isPaused = false;
-        // 현재 씬 이름 자동 저장
         restartSceneName = SceneManager.GetActiveScene().name;
-        // 버튼이 참조하던 씬 내 오브젝트는 런타임 중 교체되며 참조 상실
-        // 따라서 Start() 단계에서 살아있는 SceneTransitionManager를 코드로 참조해 연결해야 한다
         restartButton.onClick.AddListener(() => SceneTransitionManager.instance.StartSceneTransition(restartSceneName));
         exitToMenuButton.onClick.AddListener(() => SceneTransitionManager.instance.StartSceneTransition("Menu"));
     }

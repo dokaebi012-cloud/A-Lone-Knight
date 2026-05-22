@@ -36,7 +36,7 @@ public class MenuButtonManager : MonoBehaviour
         // 슬라이더 초기값 설정
         if (bgmSlider != null)
         {
-            bgmSlider.value = PlayerPrefs.GetFloat("BGMVolume", 1.0f);
+            bgmSlider.value = PlayerPrefs.GetFloat("BGMVolume", 1.0f); 
             bgmSlider.onValueChanged.AddListener(UpdateBGMVolume);
         }
 

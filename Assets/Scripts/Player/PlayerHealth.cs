@@ -9,8 +9,6 @@ public class PlayerHealth : MonoBehaviour
     public float health = 100;
     public int shieldCount = 0;
 
-    public TextMeshProUGUI shieldCountUI;
-    public TextMeshProUGUI healthCountUI;
     private SpriteRenderer spriteRenderer;
     private float colorChangeDuration = 0.1f;
     private Color originalColor;

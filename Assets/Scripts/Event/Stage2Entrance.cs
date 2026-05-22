@@ -7,6 +7,7 @@ public class Stage2Entrance : MonoBehaviour
         if (collision.CompareTag("Player"))
         {
             SceneTransitionManager.instance.StartSceneTransition("Stage2");
+
         }
     }
 }
